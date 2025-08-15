@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kedai Kopi K & R - Aroma & Cerita</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">Kopi K & R</a>
+
+            <div id="mobile-menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <div id="main-nav">
+                <ul>
+                    <li><a href="#hero">Beranda</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#tentang">Tentang Kami</a></li>
+                    <li><a href="#layanan">Layanan</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+            </div>
+            
+            <div id="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Secangkir Ketenangan di Setiap Tegukan</h1>
+                <p>Nikmati perpaduan biji kopi pilihan yang berkualitas dan kenikmatan antara perpaduan waktu dan rasa dalam setiap teguknya.</p>
+                <a href="#menu" class="btn">Lihat Menu</a>
+            </div>
+        </section>
+
+        <section id="menu" class="container">
+            <h2 class="section-title">Menu Andalan Kami</h2>
+            
+            <div class="promo-marquee">
+            <div class="marquee-wrapper">
+                    <div class="marquee-content">
+                        <span>✨ PROMO SPESIAL: Beli 2 Caffee Latte, Gratis 1 Kue Brownies! ✨</span>
+                        <span>-- Berlaku hingga akhir pekan ini! --</span>
+                        <span>✨ PROMO SPESIAL: Beli 2 Caffee Latte, Gratis 1 Kue Brownies! ✨</span>
+                        <span>-- Berlaku hingga akhir pekan ini! --</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-grid">
+                <div class="menu-item" data-id="001" data-name="Espresso" data-price="18000">
+                    <img src="espreso.jpg" alt="Espresso">
+                    <div class="menu-item-info">
+                        <h3>Espresso</h3>
+                        <p class="price">Rp 18.000</p>
+                    </div>
+                    <button class="add-to-cart-btn">Tambah ke Keranjang</button>
+                </div>
+                <div class="menu-item" data-id="002" data-name="Caffè Latte" data-price="25000">
+                    <img src="kopi latte.jpg" alt="Caffe Latte">
+                    <div class="menu-item-info">
+                        <h3>Caffè Latte</h3>
+                        <p class="price">Rp 25.000</p>
+                    </div>
+                    <button class="add-to-cart-btn">Tambah ke Keranjang</button>
+                </div>
+                <div class="menu-item" data-id="003" data-name="Cappuccino" data-price="20000">
+                     <img src="cappucino.jpg" alt="Cappuccino">
+                     <div class="menu-item-info">
+                         <h3>Cappuccino</h3>
+                         <p class="price">Rp 20.000</p>
+                     </div>
+                     <button class="add-to-cart-btn">Tambah ke Keranjang</button>
+                </div>
+                <div class="menu-item" data-id="004" data-name="Kopi Tubruk" data-price="22500">
+                    <img src="kopi tubruk.jpg" alt="Kopi Tubruk">
+                    <div class="menu-item-info">
+                        <h3>Kopi Tubruk</h3>
+                        <p class="price">Rp 22.500</p>
+                    </div>
+                    <button class="add-to-cart-btn">Tambah ke Keranjang</button>
+                </div>
+                <div class="menu-item" data-id="005" data-name="Butter Croissant" data-price="22000">
+                    <img src="kue canai.jpg" alt="Croissant">
+                    <div class="menu-item-info">
+                        <h3>Butter Croissant</h3>
+                        <p class="price">Rp 22.000</p>
+                    </div>
+                    <button class="add-to-cart-btn">Tambah ke Keranjang</button>
+                </div>
+                 <div class="menu-item" data-id="006" data-name="Kue Brownies" data-price="13000">
+                    <img src="brownies.jpg" alt="Brownies">
+                    <div class="menu-item-info">
+                        <h3>Kue  Brownies</h3>
+                        <p class="price">Rp 13.000</p>
+                    </div>
+                    <button class="add-to-cart-btn">Tambah ke Keranjang</button>
+                </div>
+                 <div class="menu-item" data-id="007" data-name="kentang goreng" data-price="15000">
+                    <img src="kentang.jpg" alt="kentang goreng">
+                    <div class="menu-item-info">
+                        <h3>Kentang Goreng</h3>
+                        <p class="price">Rp 15.000</p>
+                    </div>
+                    <button class="add-to-cart-btn">Tambah ke Keranjang</button>
+                </div>
+                 <div class="menu-item" data-id="008" data-name="Americano" data-price="18000">
+                    <img src="americano.jpg" alt="Americano">
+                    <div class="menu-item-info">
+                        <h3>Caffee Americano</h3>
+                        <p class="price">Rp 18.000</p>
+                    </div>
+                    <button class="add-to-cart-btn">Tambah ke Keranjang</button>
+                </div>
+                 <div class="menu-item" data-id="009" data-name="Burger" data-price="25000">
+                    <img src="burger.jpg" alt="Burger">
+                    <div class="menu-item-info">
+                        <h3>Burger</h3>
+                        <p class="price">Rp 25.000</p>
+                    </div>
+                    <button class="add-to-cart-btn">Tambah ke Keranjang</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="tentang">
+            <div class="container about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Cerita di Balik Kopi K & R</h2>
+                    <p>Kedai Kopi K & R lahir dari kecintaan kami terhadap kopi dan keinginan untuk menciptakan ruang di mana setiap orang bisa berhenti sejenak dari kesibukan. Kami percaya setiap cangkir kopi memiliki cerita, dan kami ingin menjadi bagian dari cerita Anda.</p>
+                    <p>Kami hanya menggunakan biji kopi lokal terbaik dari para petani Indonesia dan menyeduhnya dengan sepenuh hati.</p>
+                </div>
+                <div class="about-image">
+                    <img src="biji kopi.jpg" alt="Suasana Kedai Kopi Senja">
+                </div>
+            </div>
+        </section>
+
+        <section id="layanan" class="container">
+            <h2 class="section-title">Layanan & Fasilitas</h2>
+            <div class="layanan-grid">
+                <div class="layanan-item">
+                    <i class="fas fa-coffee"></i>
+                    <h3>Biji Kopi Pilihan</h3>
+                    <p>Kami hanya menggunakan biji kopi Arabika & Robusta terbaik dari berbagai daerah di Indonesia, diseduh oleh barista profesional kami.</p>
+                </div>
+                <div class="layanan-item">
+                    <i class="fas fa-wifi"></i>
+                    <h3>Tempat Nyaman & WiFi Cepat</h3>
+                    <p>Suasana yang hangat dan koneksi internet super cepat, cocok untuk Anda yang ingin bekerja, meeting, atau sekadar bersantai.</p>
+                </div>
+                <div class="layanan-item">
+                    <i class="fas fa-users"></i>
+                    <h3>Acara Komunitas</h3>
+                    <p>Kami rutin mengadakan acara seperti live music, workshop kopi, dan diskusi santai untuk membangun komunitas yang solid.</p>
+                </div>
+                <div class="layanan-item">
+                    <i class="fas fa-building"></i>
+                    <h3>Private Event & Ruangan</h3>
+                    <p>Sediakan ruang khusus untuk acara pribadi atau meeting tim Anda. Hubungi kami untuk informasi reservasi dan paket khusus.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="kontak" class="container">
+            <h2 class="section-title">Kunjungi Dan Ikuti Kami</h2>
+            <div class="profile-card">
+                <div class="profile-picture">
+                    <img src="profile.jpeg" alt="Foto Profil Anda">
+                </div>
+                <div class="profile-info">
+                    <h3>Biodata</h3>
+                    <p><strong>Nama:</strong>Fauzan Ahmad Dhani</p>
+                    <p><strong>NIM:</strong>10524098</p>
+                    <p><strong>Kelas:</strong>IS-3</p>
+                    <p><strong>Program Studi:</strong>Sistem Informasi</p>
+                    <p><strong>Email:</strong> <a href="fauzangg2223@gmail.com">fauzangg2223@gmail.com</a></p>
+                    
+                   
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="overlay"></div>
+
+    <div id="shopping-cart">
+        <div class="cart-header">
+            <h2>Keranjang Anda</h2>
+            <button id="close-cart">&times;</button>
+        </div>
+        <div id="cart-items"></div>
+        <div class="cart-footer">
+            <div class="cart-total-container">
+                <strong>Total:</strong>
+                <strong id="cart-total">Rp 0</strong>
+            </div>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <div id="checkout-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Detail Pemesanan</h2>
+            <div id="checkout-form-container">
+                <div class="order-summary">
+                    <h3>Ringkasan Pesanan Anda</h3>
+                    <div id="checkout-summary-items"></div>
+                    <div class="summary-total">
+                        <strong>Total Pembayaran:</strong>
+                        <strong id="checkout-total">Rp 0</strong>
+                    </div>
+                </div>
+                <form id="checkout-form">
+                    <h3>Lengkapi Data Anda</h3>
+                    <div class="form-group">
+                        <label for="customer-name">Nama Lengkap</label>
+                        <input type="text" id="customer-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="customer-phone">Nomor Telepon (WA)</label>
+                        <input type="tel" id="customer-phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Metode Layanan</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="service-method" value="Dine-in" checked> Makan di Tempat</label>
+                            <label><input type="radio" name="service-method" value="Takeaway"> Bawa Pulang</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Metode Pembayaran</label>
+                         <div class="radio-group">
+                            <label><input type="radio" name="payment-method" value="QRIS" checked> QRIS</label>
+                            <label><input type="radio" name="payment-method" value="Cash"> Tunai di Kasir</label>
+                            <label><input type="radio" name="payment-method" value="Bank Transfer"> Transfer Bank</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="submit-order-btn">Buat Pesanan Sekarang</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Kedai Kopi K & R.</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/fauzann.ad?igsh=MTQycDZ4azJmaHhqZQ==" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@fauzann.ad?_t=ZS-8ypwJupZNWX&_r=1" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

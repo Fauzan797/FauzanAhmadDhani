@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Pesanan - Kedai Kopi K & R</title>
+    <link rel="stylesheet" href="invoice.css">
+    
+</head>
+<body>
+    <div class="invoice-container">
+        <div class="invoice-header">
+            <h1>Struk Pembelian</h1>
+            <p class="shop-name">Kedai Kopi K & R</p>
+        </div>
+        <div class="invoice-details">
+            <div class="detail-item">
+                <span>Nomor Pesanan:</span>
+                <strong id="order-number">Memuat...</strong>
+            </div>
+            <div class="detail-item">
+                <span>Tanggal:</span>
+                <strong id="order-date">Memuat...</strong>
+            </div>
+            <div class="detail-item">
+                <span>Nama Pelanggan:</span>
+                <strong id="customer-name">Memuat...</strong>
+            </div>
+        </div>
+        <div class="invoice-items">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nama Item</th>
+                        <th>Jumlah</th>
+                        <th>Harga</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody id="invoice-items-body"></tbody>
+            </table>
+        </div>
+        <div class="invoice-summary">
+            <div class="summary-item">
+                <span>Metode Layanan:</span>
+                <strong id="service-method">Memuat...</strong>
+            </div>
+            <div class="summary-item">
+                <span>Metode Pembayaran:</span>
+                <strong id="payment-method">Memuat...</strong>
+            </div>
+            <div class="summary-item total">
+                <span>Total Pembayaran:</span>
+                <strong id="invoice-total">Rp 0</strong>
+            </div>
+        </div>
+        <div class="invoice-footer">
+            <p>Terima kasih telah memesan di Kedai Kopi K & R!</p>
+        </div>
+        <div class="invoice-actions">
+            <button id="print-button">Cetak Struk</button>
+            <a href="index.html" class="home-button">Kembali ke Beranda</a>
+        </div>
+    </div>
+    <script src="invoice.js"></script>
+</body>
+</html>

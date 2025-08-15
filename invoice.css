@@ -1,0 +1,91 @@
+body {
+    background-color: #f4f4f4;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem 0;
+    line-height: 1.6;
+}
+.invoice-container {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    border: 1px solid #ddd;
+}
+.invoice-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    border-bottom: 2px dashed #ccc;
+    padding-bottom: 1rem;
+}
+.invoice-header h1 { margin: 0; color: #333; }
+.shop-name { font-size: 1.2rem; color: #666; margin-top: 0.5rem; }
+.invoice-details, .invoice-summary { margin-bottom: 2rem; }
+.detail-item, .summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+.detail-item span, .summary-item span { color: #555; }
+.invoice-items table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+.invoice-items th, .invoice-items td {
+    padding: 0.8rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    font-family: 'Roboto Mono', monospace;
+}
+.invoice-items th {
+    background-color: #f9f9f9;
+    font-family: 'Poppins', sans-serif;
+}
+.invoice-items td:nth-child(2),
+.invoice-items td:nth-child(3),
+.invoice-items td:nth-child(4) { text-align: right; }
+.summary-item.total {
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-top: 2px solid #333;
+    padding-top: 1rem;
+    margin-top: 1rem;
+}
+.invoice-footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 2px dashed #ccc;
+    color: #777;
+}
+.invoice-actions {
+    margin-top: 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+#print-button, .home-button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+}
+#print-button { background-color: #007bff; color: white; }
+.home-button { background-color: #6c757d; color: white; }
+
+
+@media print {
+    body { background-color: #fff; padding: 0; }
+    .invoice-container { box-shadow: none; border: none; max-width: 100%; padding: 0; }
+    .invoice-actions { display: none; }
+}
